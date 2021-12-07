@@ -1,11 +1,13 @@
-function allSubsets(pos, len, [], subset) {
-    if (pos == N)
-        return (subset)
+var str = "abc";
+var res;
+generateSubSequence("abc","");
 
 
-
-    subset[len] = S[pos]
-    allSubsets(pos + 1, len + 1, subset)
-
-    allSubsets(pos + 1, len, subset)
+function generateSubSequence(str, res) {
+      if(str.length()==0) {
+            console.log((res));
+            return
+      }
+      generateSubSequence(str.substring(1),res)//character is not present[0]
+      generateSubSequence(str.substring(1),res+str.charAt(0))//character is present[1]
 }

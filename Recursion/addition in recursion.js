@@ -24,7 +24,7 @@ function runProgram(input) {
 }
 
 
-if (process.env.USERNAME === "Admin") {
+if (process.env.USERNAME === "Ash") {
     runProgram('2\n3\n1 2 3\n5\n1 2 3 4 5');
 } else {
     process.stdin.resume();
