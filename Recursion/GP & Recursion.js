@@ -16,7 +16,7 @@ function gp(n, r, sum) {
 
 }
 
-if (process.env.USERNAME === "Admin") {
+if (process.env.USERNAME === "Ash") {
     runProgram(`1 1`);
 } else {
     process.stdin.resume();

@@ -1,7 +1,7 @@
 function runProgram(input) {
-    var input = input.trim().split(" ");
-  
-      var n = +input[0];
+    var input = input.trim().split("\n");
+      var a = +input[0];
+      var n = input[1];
     
   
    function ff(n) {
@@ -9,14 +9,14 @@ function runProgram(input) {
           return 0;
       if (n == 0)
           return 1
-      return ff(n - 1) + ff(n - 3) + ff(n - 5);
+      return ff(n - 1) + ff(n - 2) + ff(n - 5);
   
    }
    console.log(ff(n));
   }
   
   if (process.env.USERNAME === "Ash") {
-      runProgram(`7`);
+      runProgram(`1\n5`);
   } else {
       process.stdin.resume();
       process.stdin.setEncoding("ascii");
