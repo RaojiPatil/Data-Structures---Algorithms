@@ -20,7 +20,7 @@ function binarySearch(arr, l, r, s){
 	return -1;
 }
 
-let out = binarySearch(arr, 0, n-1, s);
+let out = binarySearch(arr, 0, n-1, s); 
 (out == -1);
 
 if(out == -1) {
