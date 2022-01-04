@@ -26,7 +26,7 @@ function lowerBoundsearch(arr, k){
         var arr = input[1].split(" ").map(Number);
     console.log(lowerBoundsearch(arr, k));
     
-      }
+      }  
       
       if (process.env.USERNAME === "Ash") {
           runProgram(`5 3\n1 1 2 2 5`);
