@@ -32,7 +32,7 @@ if(out == -1) {
 
 }
   
-  if (process.env.USERNAME === "Ash") {
+  if (process.env.USERNAME === "admin") {
       runProgram(`5 0\n2 -2 0 3 4`);
   } else {
       process.stdin.resume();
