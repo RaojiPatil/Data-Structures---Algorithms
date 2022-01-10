@@ -9,14 +9,14 @@ function runProgram(input) {
           return 0;
       if (n == 0)
           return 1
-      return ff(n - 1) + ff(n - 2) + ff(n - 5);
+      return ff(n - 1) + ff(n - 2) + ff(n - 3);
   
    }
    console.log(ff(n));
   }
   
-  if (process.env.USERNAME === "Ash") {
-      runProgram(`1\n5`);
+  if (process.env.USERNAME === "Admin") {
+      runProgram(`1\n3`);
   } else {
       process.stdin.resume();
       process.stdin.setEncoding("ascii");
@@ -35,3 +35,39 @@ function runProgram(input) {
           process.exit(0);
       });
   }
+
+
+
+
+
+
+  var n = 2;
+
+  function ff(n) {
+    if (n < 0)
+        return 0;
+    if (n == 0)
+        return 1
+    return ff(n - 1) + ff(n - 2) + ff(n - 3);
+
+ }
+ console.log(ff(n));
+
+
+
+var arr1 = ["123", "146", "454", "542", "456"];
+var arr2 = ["100", "328", "248", "709", "200"];
+
+var count = 0;
+ 
+
+for (var i = 0; i < arr2.length; i++) {
+    for (var j = 0; j < arr1.length; j++) {
+        if(arr2[i] > arr1[j]) {
+            count++;
+        }
+    }
+}console.log(count); 
+
+
+
