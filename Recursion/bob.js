@@ -9,14 +9,14 @@ function runProgram(input) {
           return 0;
       if (n == 0)
           return 1
-      return ff(n - 1) + ff(n - 2) + ff(n - 3);
+      return ff(n - 3) + ff(n - 5) + ff(n - 10);
   
    }
    console.log(ff(n));
   }
   
-  if (process.env.USERNAME === "Admin") {
-      runProgram(`1\n3`);
+  if (process.env.USERNAME === "admin") {
+      runProgram(`1\n13`);
   } else {
       process.stdin.resume();
       process.stdin.setEncoding("ascii");
