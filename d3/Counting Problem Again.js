@@ -44,12 +44,25 @@ if (process.env.USERNAME === "admin") {
 }
 
 
+var str = "masaischool";
+str = str.split("").sort();
+var count = 0;
+for (var i = 0; i < str.length; i++) {
+    for (var j = i+1; j < str.length; j++) {
+      if(str[i] == str[j]) {
+          count++; 
+      }
+      
+    } 
+} 
 
+const fib = (n) => {
+    if(n <= 2)
+    return 1;
+    return fib(n -1) + fib(n -2); 
+}
 
-
-
-
-var arr = "asklhjkhdfihfkk";
-arr = arr.split("").sort();
-
-console.log(arr.join(" "));
+console.log(fib(5));
+console.log(fib(6));
+console.log(fib(7));
+console.log(fib(8));

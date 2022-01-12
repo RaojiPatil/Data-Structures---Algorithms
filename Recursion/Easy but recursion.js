@@ -21,8 +21,8 @@ function runProgram(input) {
 }
 
 
-if (process.env.USERNAME === "Ash") {
-    runProgram('3');
+if (process.env.USERNAME === "admin") {
+    runProgram('4');
 } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");

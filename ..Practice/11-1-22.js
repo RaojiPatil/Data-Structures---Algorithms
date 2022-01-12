@@ -102,7 +102,7 @@ console.log(oppositeFaceOfDice(3));
 
 
 
-/*
+/* 6. 
 Consider a game where a player can score 3 or 5 or 10 points in a move.
  Given a total score n, find number of distinct combinations to reach the given score.
 */
@@ -129,3 +129,25 @@ function count(n) {
     return table[n];
 }
 console.log(count(n));
+
+
+
+
+// 7 factorial 
+
+
+var n = 8;
+var sum = 1;
+for (var i = 1; i <= n; i++) {
+    sum = sum * i;
+}
+console.log(sum);
+
+
+function f(n) {
+    if((n == 0) || (n == 1))
+    return n;
+    return n * f(n-1);
+}
+
+console.log(f(8));

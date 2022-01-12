@@ -14,7 +14,7 @@ function runProgram(input) {
 
 }
 
-if (process.env.USERNAME === "Ash") {
+if (process.env.USERNAME === "admin") {
     runProgram('4');
 } else {
     process.stdin.resume();
