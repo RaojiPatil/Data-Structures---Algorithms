@@ -14,20 +14,6 @@
 
 
 
-
-var arr = [15, 15, 3, 10, 12, 12, 13, 5, 5, 7]
-var n = arr.length;
-var count = 0;
-
-for (var i = 0; i < arr.length; i++) {
-    for(var j = i+1; j < arr.length; j++) {
-    
-    }
-}
-
-
-
-
 let arr= [15, 15, 3, 10, 12, 12, 13, 5, 5, 7]
 let n = arr.length;
 
