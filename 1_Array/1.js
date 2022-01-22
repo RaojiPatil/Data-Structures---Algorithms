@@ -5,6 +5,7 @@ var a = 'rutwik';
 var arr = a.split("");
 var N = 6;
 var output = "";
+
 for (var i = 0; i < N; i = i + 2) {
     var temp = arr[i];
     arr[i] = arr[i + 1];
@@ -50,6 +51,11 @@ var object = {
 }
 object.Area();
 object.parameter();
+
+
+var 
+
+
 
 //
 var a = 31;

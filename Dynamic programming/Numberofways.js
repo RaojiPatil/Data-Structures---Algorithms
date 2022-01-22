@@ -6,8 +6,6 @@ function runProgram(input) {
 }
       function countway(n) {
           var DP = [];
-          DP.length = 10;
-          DP.fill(0);
           DP[0] = DP[1] = DP[2] = 1;
           DP[3] = 2;
           for(var i = 4; i <= n; i++)
@@ -17,7 +15,7 @@ function runProgram(input) {
       }
   
   if (process.env.USERNAME === "admin") {
-      runProgram(`34`);
+      runProgram(`6`);
   } else {
       process.stdin.resume();
       process.stdin.setEncoding("ascii");
