@@ -39,7 +39,7 @@ if (count >= 1) {
     console.log("false")
 }
 
-// Palindrom
+//2 Palindrom
 
 var str = "1221";
 var wordArr2 = [];
@@ -53,3 +53,23 @@ for (var i = str.length - 1; i >= 0; i--) {
     }
 }
 console.log(res);
+
+
+//3 
+
+var str = "abcde";
+
+for (var i = 0; i < str.length; i++) {
+    if(str[0] == "a" || str[0] == "e" || str[0]=="i" || str[0] =="o" || str[0] =="u") {
+       var count = 1;
+    } else{
+      count = 0;
+    }
+}
+if(count == "1"){
+    console.log(str+"halk");
+}else{
+    console.log(str+"thor");
+}
+
+//Q 4
