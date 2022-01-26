@@ -72,4 +72,19 @@ if(count == "1"){
     console.log(str+"thor");
 }
 
-//Q 4
+//Q 4  reverse string
+
+var str = "raojipatil";
+
+str = str.split("").reverse().join("");
+console.log(str);
+
+
+
+var str = "raoji";
+var out = "";
+str = str.slice(" ")
+for(var i = str.length-1; i > 0; i--){
+    out = out +str[i];
+}
+console.log(str);

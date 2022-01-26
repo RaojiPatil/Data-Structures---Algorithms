@@ -370,6 +370,141 @@ for (var i = 1; i <= n; i++) {
      out = out * i;
 }console.log(out);
 
-// Q 12 array
 
-var 
+
+
+// Q 12 reverse array
+
+var arr = [1,2,3,4,5,6,7,8];
+arr = arr.reverse();
+console.log(arr);
+
+
+var arr = [1,2,3,4,5,6,7,8];
+var out = "";
+
+for (var i = arr.length-1; i > 0; i--) {
+    out = out + arr[i] + " ";
+}
+console.log(out);
+
+var str = "raojipatil";
+
+str = str.split("").reverse().join("");
+console.log(str);
+
+
+
+// Q 13 sort function
+
+
+var arr = [5,3,7,6,20,3,8,9,1,2];
+var out = 0;
+// arr = arr.sort();
+// console.log(arr);
+
+arr.sort(function(a, b) {return a-b})
+
+console.log(arr);
+
+
+// comman count
+
+var arr = [1,1,1,2,3,4,2,1,1,1];
+var x = 1;
+var count = 0;
+for (var i = 0; i < arr.length; i++) {
+    if(x == arr[i]) {
+        count++;
+    }
+}
+console.log(count);
+
+
+// 
+
+var arr = [0, 2, 1, 2, 0];
+
+for(var i = 0; i < arr.length; i++) {
+   for(var j = i+1; j < arr.length; j++){
+     if(arr[j] > arr[i]) {
+      var temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+     }
+   }
+}
+console.log(temp);
+
+//Q 14 Subarray with given sum
+
+let arr= [15, 2, 4, 8, 9, 5, 10, 23];
+let n = arr.length;
+let sum = 23;
+
+function subArraySum(arr, n, sum) {
+    let out=0;
+
+    for (let i = 0; i < n; i++) {
+        out = arr[i];
+        for (let j = i + 1; j <= n; j++) {
+            if (out == sum) {
+                console.log(i+" " +(j - 1));
+                return;
+            }
+            if (out > sum || j == n)
+                break;
+                out = out + arr[j];
+        }
+    }
+
+   console.log("No subarray found");
+    return;
+}
+
+subArraySum(arr, n, sum);
+
+
+
+let arr=[15, 2, 4, 8, 9, 5, 10, 23 ];
+let n = arr.length;
+let sum = 23;
+
+
+function subArraySum(arr,n,sum) {
+    let curr_sum = arr[0], start = 0;
+
+    for (var i = 1; i <= n; i++) {
+
+        while (curr_sum > sum && start < i - 1) {
+            curr_sum = curr_sum - arr[start];
+            start++;
+        }
+
+        if (curr_sum == sum) {
+            let p = i - 1;
+            console.log(start + " " + p);
+            return 1;
+        }
+
+        if (i < n)
+            curr_sum = curr_sum + arr[i];
+    }
+
+    console.log("No subarray found");
+    return 0;
+}
+
+subArraySum(arr, n, sum);
+
+
+
+// Q 15 move all -ve number
+
+var arr = [1, 2, -5, 4, -7, 6];
+var out = "";
+
+
+for (var i = 0; i < arr.length; i++) {
+    if(arr[i] == )
+}
