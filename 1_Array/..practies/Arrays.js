@@ -501,10 +501,132 @@ subArraySum(arr, n, sum);
 
 // Q 15 move all -ve number
 
-var arr = [1, 2, -5, 4, -7, 6];
+var arr = [1, -1, 3, 2, -7, -5, 11, 6];
 var out = "";
-
+var out1 = "";
 
 for (var i = 0; i < arr.length; i++) {
-    if(arr[i] == )
+    if(arr[i] > 0) {
+        out = out + arr[i] +" ";
+    } else{
+        out1 = out1 + arr[i] +" ";
+    }
+}console.log(out + out1);
+
+
+// Q 16 Union of two arrays 
+
+var arr1 = [85, 25, 1, 32,54, 6];
+var arr2 = [85, 2];
+var n = arr1.length;
+var m = arr2.length;
+
+var out = 0;
+
+for (var i = 0; i < arr1.length; i++) {
+  for(var j = 0; j < arr2.length; j++){
+       if(arr1[i] == arr2[j]) {
+           out++;
+       }
+  }
 }
+console.log(n+m-out);
+
+
+
+// Q 17 rotate last value
+
+var arr = [3,5,2,7,9];
+var out = arr[arr.length-1];
+var out1 = "";
+for(var i = 0; i < arr.length-1; i++){
+    out1 = out1 + arr[i] + " ";
+}
+console.log(out + " " + out1);
+
+
+
+var arr = [1,2,3,4,5];
+var n = arr.length;
+
+function rotate(arr, n) {
+    var i = 0;
+    var j = n-1;
+
+    while(i != j) {
+        let temp;
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i = i+1;
+    }
+ 
+}
+rotate(arr, n);
+console.log(arr);
+
+// Q 18 find missing integer
+
+var arr = [6,1,2,8,3,4,7,10,5];
+var out = 1;
+arr = arr.sort(function(a,b) {return a-b});
+
+for(var i = 0; i < arr.length; i++) {
+  if(arr[i] == out ){
+      out++;
+  }
+}
+console.log(out);
+
+
+
+var arr = [1,2,3,5];
+var n = arr.length;
+var out = 0;
+
+let total = Math.floor((n + 1) * (n + 1) / 2);
+
+for(var i = 0; i < arr.length; i++) {
+    total = total - arr[i];
+}
+console.log(total);
+
+
+
+
+
+//Q 19 Count pairs with given sum 
+
+var arr = [1,1,1,1];
+var k = 2;
+var count = 0;
+
+for (var i = 0; i < arr.length; i++) {
+    for (var j = i+1; j < arr.length; j++) {
+        if(arr[i] + arr[j] == k) {
+            count++;
+        }
+    }
+}
+console.log(count);
+
+
+
+var arr = [1,1,1,1];
+var k = 2;
+var count = 0;
+
+let i = 0, j = arr.length-1;
+
+while (i <= j) {
+    if(i + j == k) {
+        count++;
+        
+    }
+    i++;
+    j--;
+}
+console.log(count);
+
+//
+
