@@ -9,3 +9,6 @@ if(d > n) {
 } else {
     console.log(n);
 }
+
+
+

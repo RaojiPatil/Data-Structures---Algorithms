@@ -148,4 +148,6 @@ var col = arr[0].length;
     console.log(d1);
     }
 
+    
+
 
