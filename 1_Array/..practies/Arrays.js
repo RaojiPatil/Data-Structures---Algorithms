@@ -633,3 +633,109 @@ console.log(out);
 var arr = [4,1,3,9,7];
 var out = "";
 
+
+
+
+
+
+//
+
+var arr = [2, 6];
+var a = arr[0];
+var k = arr[arr.length-1];
+var c = 0;
+
+
+
+if(arr[0]* 1 == k ||  arr[0]* 2 == k  || arr[0] * 3 == k  || arr[0] * 4 == k  ||  arr[0] * 5 == k  || arr[0] * 6 == k  || arr[0] * 7 == k  || arr[0] * 8 == k  || arr[0] * 9 == k) {
+    c = "1";
+}
+if(arr[0] / 1 == k ||  arr[0] / 2 == k  || arr[0] / 3 == k  || arr[0] / 4 == k  ||  arr[0] / 5 == k  || arr[0] / 6 == k  || arr[0] / 7 == k  || arr[0] / 8 == k  || arr[0] / 9 == k) {
+    c = "1";
+}
+else if (arr[0] != k) {
+      for(var i = 0; i <= 9; i++) {
+          for (var j = 0; j <= 9; j++) {
+        if(arr[0] / i == k) {
+            c = "1";
+            console.log("a")
+            break;
+        } else if (arr[0] * i == k) {
+            c = "1";
+            console.log("b")
+            break;
+        } else if(arr[0] / i * j == k) {
+            c = "2";
+            console.log("c")
+            break;
+        } else if(arr[0] * i / j == k) {
+            c = "2";
+            console.log("ab")
+            break;
+        }
+      }
+    }
+    
+  }
+
+
+console.log(c);
+
+
+
+
+
+
+
+var arr = [15, 10];
+var a = arr[0];
+var k = arr[arr.length-1];
+var c = 0;
+
+if(arr[0]* 1 == k ||  arr[0]* 2 == k  || arr[0] * 3 == k  || arr[0] * 4 == k  ||  arr[0] * 5 == k  || arr[0] * 6 == k  || arr[0] * 7 == k  || arr[0] * 8 == k  || arr[0] * 9 == k) {
+    c = "1";
+}
+if(arr[0] / 1 == k ||  arr[0] / 2 == k  || arr[0] / 3 == k  || arr[0] / 4 == k  ||  arr[0] / 5 == k  || arr[0] / 6 == k  || arr[0] / 7 == k  || arr[0] / 8 == k  || arr[0] / 9 == k) {
+    c = "1";
+}else {
+    c = "2";
+}
+
+console.log(c);
+
+
+
+function repeatStringNumTimes(string, times) {
+    if(times < 0) 
+      return "";
+    if(times === 1) 
+      return string;
+    else 
+      return string + repeatStringNumTimes(string, times - 1);
+  }
+  repeatStringNumTimes("abc", 3);
+
+
+
+  var arr = [15, 10];
+var k = arr[arr.length-1];
+var c = 0;
+var T = 3;
+for (var i = 0; i < T; i++) {
+
+if(arr[0]* 1 == k ||  arr[0]* 2 == k  || arr[0] * 3 == k  || arr[0] * 4 == k  ||  arr[0] * 5 == k  || arr[0] * 6 == k  || arr[0] * 7 == k  || arr[0] * 8 == k  || arr[0] * 9 == k) {
+    c = "1";
+}
+if(arr[0] / 1 == k ||  arr[0] / 2 == k  || arr[0] / 3 == k  || arr[0] / 4 == k  ||  arr[0] / 5 == k  || arr[0] / 6 == k  || arr[0] / 7 == k  || arr[0] / 8 == k  || arr[0] / 9 == k) {
+    c = "1";
+}else {
+    c = "2";
+}
+console.log(c);
+}
+
+
+
+if(arr[0] == k) {
+    c = "1";
+}
