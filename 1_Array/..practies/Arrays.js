@@ -612,21 +612,24 @@ console.log(count);
 
 
 
-var arr = [1,1,1,1];
-var k = 2;
-var count = 0;
+// find duplicates
 
-let i = 0, j = arr.length-1;
+var arr = [2,3,1,2,3];
+var out = "";
 
-while (i <= j) {
-    if(i + j == k) {
-        count++;
-        
+for (var i = 0; i < arr.length; i++) {
+    for(var j = i+1; j < arr.length; j++) {
+        if(arr[i] == arr[j]) {
+            out = out + arr[i] +" ";
+        }
     }
-    i++;
-    j--;
 }
-console.log(count);
+console.log(out);
 
-//
+
+
+//Q 20 Quick sort
+
+var arr = [4,1,3,9,7];
+var out = "";
 

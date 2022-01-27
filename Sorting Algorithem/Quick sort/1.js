@@ -11,31 +11,31 @@ console.log(items.sort().join(" "));
 //
 
 
-// var arr = [5,3,7,6,2,9];
+var arr = [5,3,7,6,2,9];
 
-// function Quicksort(arr, left, right) {
-//     var pivot = arr[Math.floor((right+left)/2)],
-//      i = left,
-//      j = right;
+function Quicksort(arr, left, right) {
+    var pivot = arr[Math.floor((right+left)/2)],
+     i = left,
+     j = right;
 
-//     while (i <= j) {
-//         while (arr[i] < pivot) {
-//             i++;
-//         }
-//         while (arr[j] > pivot) {
-//             j--;
-//         }
+    while (i <= j) {
+        while (arr[i] < pivot) {
+            i++;
+        }
+        while (arr[j] > pivot) {
+            j--;
+        }
 
-//         if(i <= j) {
-//             swap(arr, i, j);
-//             i++;
-//             j--;
-//         }
-//     }
-//     return i;
-// }
+        if(i <= j) {
+            swap(arr, i, j);
+            i++;
+            j--;
+        }
+    }
+    return i;
+}
 
-// console.log(Quicksort(arr, left, right));
+console.log(Quicksort(arr, left, right));
 
 //
 
