@@ -1,4 +1,4 @@
-let s = "adccfs";
+let s = "asdefghtyik";
 let longest = "";
 
 
