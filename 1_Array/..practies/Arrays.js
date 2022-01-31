@@ -739,3 +739,47 @@ console.log(c);
 if(arr[0] == k) {
     c = "1";
 }
+
+
+
+var arr = ["masai", "school", "masai", "masai"];
+var count = 1;
+arr.sort();
+
+for (var i = 0; i < arr.length; i++) {
+if(arr[i] == arr[i+1]) {
+    count++;
+}
+else {
+ 
+}
+}
+console.log(count);
+
+
+
+var arr = ["masai", "school", "masai", "masai"];
+
+for (var i = 0; i < arr.length; i++) {
+    var count = 0;
+    var out = "";
+  for(var j = i+1; j < arr.length; j++) {
+    if(arr[i] == arr[j]) {
+        count++
+        arr[j] == "";
+      out = arr[i];
+    } else {
+        count = "1";
+        out = arr[i];
+    }
+ }
+ if(count == 0) {
+     count = "";
+ } else {
+    console.log(out+ " " + count);
+ }
+}
+
+
+
+
