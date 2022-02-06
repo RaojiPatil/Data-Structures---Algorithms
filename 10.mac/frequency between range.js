@@ -49,3 +49,52 @@ if (process.env.USERNAME === "admin") {
 
 
 
+
+
+var arr = [1,2,3,4,5,6,2,3,1];
+
+var out = "";
+
+arr.sort();
+
+for (var i = 0; i < arr.length; i++) {
+    if(arr[i] != arr[i+1]) {
+        out = out + arr[i] + " ";
+    }
+}
+console.log(out);
+
+
+
+
+
+
+
+var n = 7;
+
+function fib(n) {
+    if(n == 0 || n == 1) 
+        return n;
+    return fib(n-1) + fib(n-2);
+}
+
+console.log(fib(n));
+
+
+
+
+let a = 10;
+let a = 10;
+console.log(a);
+
+const a = 20;
+const a = 30;
+console.log(a);
+
+
+
+
+
+var arr = [1,4,2,3,7,6,8];
+
+

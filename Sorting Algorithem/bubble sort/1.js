@@ -75,5 +75,17 @@ if (process.env.USERNAME === "Ash") {
 
 
 
-var arr = [8,0,4,6,3];
-console.log(arr.sort().join(" "));
+var arr = [8,0,15,2,3];
+var arr1 = [11,2,3];
+
+var a =arr.concat(arr1).sort(function(a, b)  { return(a-b) })
+console.log(a);
+var out = "";
+for(var i = 0; i < a.length; i++) {
+    if(arr[i] != arr[i+1]) {
+        out = out + arr[i]+ " ";
+    }
+}
+
+console.log(out);
+

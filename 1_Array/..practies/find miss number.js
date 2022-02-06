@@ -15,3 +15,22 @@ function getMissingNo(arr, n) {
 
 console.log(miss);
 
+
+
+let arr = [ 1, 2, 3, 4, 6];
+
+var out = 0;
+
+for (var i= 0; i < arr.length; i ++) {
+	if(arr[i] < arr[i+1] && arr[i] > arr[i-1]) {
+		out = "";
+	} else {
+		out = (arr[i+1]);
+	}
+}
+console.log(out);
+
+
+
+
+

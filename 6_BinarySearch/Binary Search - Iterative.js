@@ -88,28 +88,54 @@ console.log(out)
 
 // Binary search
 
-var arr = [2,4,6,3,8,7,5];
+var arr = [1,2,3,4];
 
-var k = 8;
-var low = 0;
-var high = arr.length-1;
-var mid
+var x = 3;
 
-function binarySearch(arr, k) {
-while (low <= high) {
-    mid = low + Math.floor((low-high)/2);
-    if(arr[mid] == k) {
-        return mid;
-    } if (arr[mid] > k) {
-      high = mid - 1;
-    } else {
-        low = mid + 1;
+function binarySearch(arr, x) {    
+    let l = 0;
+    let r = arr.length - 1;
+    let mid;
+    while (r >= l) {
+         mid = l + Math.floor((r - l) / 2);
+        if (arr[mid] == x)
+            return mid;
+ 
+        if (arr[mid] > x)
+            r = mid - 1;
+            
+        else 
+            l = mid + 1;
     }
-    return "-1";
-}
+    return -1;
 }
 
-result = binarySearch(arr, k);
-        
-(result == -1);
-console.log(result)
+console.log(binarySearch(arr, x));
+
+
+
+
+
+var arr = [ 2, 3, 5, 8, 9, 10, 11 ];
+
+var val = 17;
+var N =7;
+
+function isPairSum(A, N, X) {
+var i = 0;
+var j = N - 1;
+while (i < j) {
+
+if (A[i] + A[j] == X)
+	return true;
+else if (A[i] + A[j] < X)
+	i++;
+else
+j--;
+}
+
+return false;
+}
+
+console.log(isPairSum(arr, N, val));
+	
