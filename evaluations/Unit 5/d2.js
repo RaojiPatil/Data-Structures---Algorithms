@@ -169,3 +169,50 @@ function nth(tn,dp){
         });
     }
       
+
+
+
+
+
+
+
+var [n, k] = [3, 4];
+var arr = [1, 8, 5, 9, 6, 1]; 
+var out = 0;
+var out1 = 0;
+var total = 0;
+for (var i = 0; i < n; i++) {
+    out = out + arr[i];
+}
+for(var i = n; i < arr.length-1; i++) {
+    out1 = out1 + arr[i];
+}
+ 
+total = (out- out1)
+if(total < k) {
+    console.log("valid");
+} else{
+    console.log("invalid");
+}
+
+
+
+
+var arr = [2, 4, 4, 6, 8];
+var k = 10;
+
+var n = arr.length;
+var out = 0;
+var sum = 0;  
+for(var i = 0; i < n; i++){
+   
+ for(var j = i; j < n; j++){
+      sum += arr[j];
+ if (sum == k)
+      out = out + (arr[i], arr[j]);
+  }
+    }
+console.log(out);
+    
+
+    

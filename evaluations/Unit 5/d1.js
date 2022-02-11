@@ -105,23 +105,35 @@ if (process.env.USERNAME === "admin") {
 
 
 function runProgram(input) {
-    var input = input.trim().split("\n");
-   var t = input[0];
-   for(var i = 0; i < t; i++) {
-   var line = 1;
-   var n = input[line++];
-    for(var i = 0; i < n; i++) {
-        var [a, b] = input[line++].split(" ").map(Number);
-        console.log(a, b);
-    }
+var input = input.trim().split("\n");
+
+var [n, k] = input[0].split(" ").map(Number);
+var line = 1;
+var arr = input[line++].split(" ").map(Number);  
+
+var out = 0;
+var out1 = 0;
+var total = 0;
+for (var i = 0; i < n; i++) {
+    out = out + arr[i];
 }
+for(var i = n; i < arr.length-1; i++) {
+    out1 = out1 + arr[i];
+}
+ 
+total = (out- out1)
+if(total < k) {
+    console.log("valid");
+} else{
+    console.log("invalid");
 }
 
 
+}
 
 
 if (process.env.USERNAME === "admin") {
-    runProgram('2\n3\n4 3\n1 4\n3 2\n5\n5 6\n4 3\n1 2\n7 5\n3 4');
+    runProgram('3 4\n1 8 5 9 6 1');
 } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");
