@@ -4,16 +4,12 @@
 
 let arr = [ 1, 2, 4, 5, 6 ];
 let n = arr.length;
-var miss = getMissingNo(arr, n);
-function getMissingNo(arr, n) {
+let total = Math.floor((n + 1) * (n + 2) / 2);
 
-		let total = Math.floor((n + 1) * (n + 2) / 2);
-		for (let i = 0; i < n; i++)
-			total = total - arr[i];
-		return total;
-}
+for (let i = 0; i < n; i++)
+total = total - arr[i];
 
-console.log(miss);
+console.log(total);
 
 
 
@@ -33,4 +29,9 @@ console.log(out);
 
 
 
-
+var a = "8955795758"; 
+if(a % 7 == 0){
+	console.log("1");
+}else {
+	console.log("0");
+}

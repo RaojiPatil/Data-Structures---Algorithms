@@ -88,3 +88,24 @@ for(var i = str.length-1; i > 0; i--){
     out = out +str[i];
 }
 console.log(str);
+
+
+
+var arr = [1,2,3,4,5,6,7,8];
+var k = 4;
+var l = 0;
+var h = arr.length
+var mid = Math.floor((l+h)/2);
+
+while(l < h) {
+    if(arr[mid] == k) {
+        console.log(mid);
+    }if(arr[mid] > k) {
+        h = mid-1;
+    } else {
+        l = mid+1;
+    }
+    l++;
+    h--;
+}
+
