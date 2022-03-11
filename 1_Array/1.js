@@ -53,8 +53,6 @@ object.Area();
 object.parameter();
 
 
-var 
-
 
 
 //
@@ -77,3 +75,6 @@ for (var i = 0; i < arr.length; i++) {
         break;
     }
 }console.log(i);
+
+
+
