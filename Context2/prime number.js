@@ -25,5 +25,5 @@ const isPrime = n => {
     const filtered = arr.filter(el => isPrime(el));
     return filtered;
  };
-arr = arr.length-1;
+
  console.log(filterPrime(arr));
