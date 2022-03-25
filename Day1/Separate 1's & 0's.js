@@ -16,7 +16,7 @@ console.log(out + out1);
 
 
 
-// 2 two pointer approch   TC = O(n);  SC= O(1);
+// 2 two pointer approch   TC = O(n);  SC= O(1)
 
 var arr = [1, 1, 0, 1, 0, 0];
 var n = arr.length;

@@ -20,7 +20,7 @@ function upperbound(arr, k){
     var out = -1;
     while (low <= high) {
         mid = low +(Math.floor((high-low)/2))
-        if (arr[mid]<= k){
+        if (arr[mid] <= k){
             low = mid + 1;
         } else{
             out = mid
@@ -34,7 +34,6 @@ function runProgram(input){
 input = input.trim().split("\n");
 var [n,k] = input[0].trim().split(" ").map(Number);
 var arr = input[1].trim().split(" ").map(Number);
-
 console.log(upperbound(arr,k));
 }
 

@@ -19,7 +19,8 @@ console.log(out+ out1 + out2);
 
 
 
-// 2 Dutch national flag algorithem
+
+// 2 Dutch national flag algorithem        O(n); 
 
 var arr = [1, 2, 1, 0, 2, 1, 0];
 var n = arr.length;

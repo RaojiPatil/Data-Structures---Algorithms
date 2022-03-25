@@ -22,7 +22,7 @@ var arr = input[1].trim().split(" ").map(Number);
 console.log(upperBound(arr,k));
 }
 
-if (process.env.USERNAME === "Ash") {
+if (process.env.USERNAME === "admin") {
     runProgram();
 } else {
     process.stdin.resume();

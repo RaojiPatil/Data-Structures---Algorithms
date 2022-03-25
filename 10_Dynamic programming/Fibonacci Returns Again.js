@@ -5,7 +5,7 @@ function runProgram(input) {
     
 }
 function  f(n) {
-    let dp = new Array; 
+    let dp = [];
 
     dp[0] = 0;
     dp[1] = 1;

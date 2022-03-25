@@ -1,47 +1,46 @@
 function runProgram(input) {
     var input = input.trim().split("\n");
-    var [n, search] = input[0].split(" ").map(Number);
+    var [n, key] = input[0].split(" ").map(Number);
     var arr = input[1].split(" ").map(Number);
 
-function binarySearch(arr, left, right, search) {
+function binarysearch(arr, left, right, key) {
 	if (right < left) {
 		return -1;
 	}
 
 	var mid = left + Math.floor((right - left) / 2);
 
-	if (arr[mid] == search) {
+	if (arr[mid] == key) {
 		return mid;
 	}
 
-	if (arr[mid] > search) 
-		return binarySearch(arr, left, mid - 1, search);
+	if (arr[mid] > key) 
+		return binarysearch(arr, left, mid - 1, key);
 
-	return binarySearch(arr, mid + 1, right, search);
+	return binarysearch(arr, mid + 1, right, key);
 }
 
-function count(arr, n, search)
-{
-	var out = binarySearch(arr, 0, n - 1, search);
+function countvalue(arr, n, key) {
+	var out = binarysearch(arr, 0, n - 1, key);
 
 	if (out == -1)
 		return 0;
 
-	var count = 1;
+	var countvalue = 1;
 	var left = out - 1;
-	while (left >= 0 && arr[left] == search) {
-		count++,
+	while (left >= 0 && arr[left] == key) {
+		countvalue++,
         left--;
 }
 	var right = out + 1;
 
-	while (right < n && arr[right] == search) {
-		count++,
+	while (right < n && arr[right] == key) {
+		countvalue++,
 		right++;
 }
-	return count;
+	return countvalue;
 }
-console.log((count(arr, n, search)));
+console.log((countvalue(arr, n, key)));
 }
   
   if (process.env.USERNAME === "admin") {
