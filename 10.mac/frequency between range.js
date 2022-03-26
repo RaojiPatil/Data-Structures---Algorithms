@@ -82,19 +82,3 @@ console.log(fib(n));
 
 
 
-
-let a = 10;
-let a = 10;
-console.log(a);
-
-const a = 20;
-const a = 30;
-console.log(a);
-
-
-
-
-
-var arr = [1,4,2,3,7,6,8];
-
-

@@ -42,13 +42,15 @@ var leftsum = 0;
 
 for(var i = 0; i< n; i++) {
     sum = sum + arr[i];
-    console.log(sum);
+    // console.log(sum);
 }
-console.log(sum);
+// console.log(sum);
+
 for(var i = 0; i < n; i++) {
     sum = sum - arr[i];
-    if(leftsum = sum) {
+    if(leftsum == sum) {
     console.log(i);
+    break;
    }
 leftsum = leftsum + arr[i];
 }

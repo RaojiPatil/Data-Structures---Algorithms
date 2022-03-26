@@ -1,4 +1,4 @@
 // Time Complicity 
-// Best O(n log(n));
-// Average  O(n log(n));
-//Worst   O(n log(n));
+// Best O(nlog(n));
+// Average  O(nlog(n));
+//Worst   O(nlog(n));
