@@ -7,7 +7,7 @@ var prod = 1;
 for(var i = 0; i < arr.length; i++) {
   prod = prod * arr[i];
 }
-
+console.log(prod)
 for(var i = 0; i < arr.length; i++) {
     out = out + prod/arr[i] + " ";
 }

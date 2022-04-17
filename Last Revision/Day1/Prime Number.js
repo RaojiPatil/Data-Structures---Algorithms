@@ -63,3 +63,10 @@ console.log(Prime[Prime.length-1]);
 
 // 3
 
+var a = 7;
+
+for(var i = 1; i <= a; i++) {
+  if(a%i == 0) {
+    console.log(i);
+  }
+}

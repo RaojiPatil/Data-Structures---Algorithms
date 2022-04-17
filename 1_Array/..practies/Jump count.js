@@ -46,7 +46,7 @@ if(c[i] === 0 && i !== (c.length - 2)){
 
 
 
-var c = [0,0,1,0,0,1,0];
+var c = [0,0,0,0,1,0];
 var count = 0;
 var step = 0;
 
@@ -64,4 +64,5 @@ console.log(count);
 
 
 
-
+var a = 3 && 0 && 2;
+conso

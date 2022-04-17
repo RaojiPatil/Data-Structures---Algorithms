@@ -6,7 +6,8 @@ var out = 1;
 
 for (var i = 1; i <= n; i++) {
      out = out * i;
-}console.log(out);
+}
+console.log(out);
 
 
 

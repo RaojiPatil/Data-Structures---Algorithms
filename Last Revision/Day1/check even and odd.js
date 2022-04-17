@@ -7,7 +7,7 @@
 // use every time n & 1;
 
 // 1 
-var n = 3;
+var n = 4;
 
 if(n & 1) {
   console.log("number is odd");

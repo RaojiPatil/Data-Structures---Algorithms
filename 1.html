@@ -7,19 +7,49 @@
     <title>Document</title>
     <style>
         #boxmodel{
-            width: 200px;
-            height: 200px;
-            margin: 100px;
-            /* margin-left: 300px; */
+            display: flex;
+	justify-content: center;
+	align-items: center;
             border: 10px  solid black;
-            padding: 100px;
+        
         }
+        #se{
+            /* display: inline-block; */
+            margin: auto;
+	width: 200px;
+     height: 200px;
+     /* vertical-align: middle; */
+            border: 1px solid red;
+            
+        }
+
+        #content{
+        color: blue;
+       }
+
+        
     </style>
 </head>
 <body>
     
     <div id="boxmodel">
-        Hii a am Raoji Patil
+       <div id="se"></div>
     </div>
+
+    <div id="content">
+        <h1 style="color: red">hello</h1>
+       </div>
+       
+     
 </body>
 </html>
+
+<script>
+
+    (function() {
+        var x = 0;
+        alert(x);
+    })
+    ()
+
+</script>

@@ -7,3 +7,4 @@ for(var i = 0; i < arr.length; i++) {
         out = out * arr[j];
     }console.log(out);
 }
+
